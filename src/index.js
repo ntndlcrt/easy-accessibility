@@ -4,7 +4,7 @@ const { tabTrapEls } = config
 import clickKey from './_clickKey'
 import tabTrap from './_tabTrap'
 
-export default accessibility = (() => {
+let accessibility = (() => {
     let init = () => {
         clickKey()
         tabTrap(tabTrapEls)
@@ -14,3 +14,5 @@ export default accessibility = (() => {
         init
     }
 })()
+
+export default accessibility
