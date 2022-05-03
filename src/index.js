@@ -1,12 +1,12 @@
 import config from '../config'
 const { tabTrapEls } = config
 
-import clickKey from './_clickKey'
+import keyClick from './_keyClick'
 import tabTrap from './_tabTrap'
 
 let accessibility = (() => {
     let init = () => {
-        clickKey()
+        keyClick()
         tabTrap(tabTrapEls)
     }
 

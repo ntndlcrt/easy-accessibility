@@ -1,4 +1,4 @@
-export default function clickKey() {
+export default function keyClick() {
     let items = document.querySelectorAll('[click-key]')
 
     if (items) {
