@@ -1,4 +1,4 @@
-import config from '../config'
+import config from '../config/index'
 const { tabTrapEls } = config
 
 import keyClick from './_keyClick'
