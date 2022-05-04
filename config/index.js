@@ -1,6 +1,5 @@
 const tabTrapEls = [
-    '[tabindex = "0"]',
-    '.form-popup__content__close',
+    '[tabindex="0"]',
     'a[href]:not([disabled])',
     'button:not([disabled])',
     'textarea:not([disabled])',

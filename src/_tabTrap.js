@@ -29,7 +29,7 @@ class ClassWatcher {
                 if(this.lastClassState !== currentClassState) {
                     this.lastClassState = currentClassState
                     if(currentClassState) {
-                        this.classAddedCallback()
+                        this.classAddedCallback(this.targetNode)
                     }
                 }
             }
@@ -38,21 +38,25 @@ class ClassWatcher {
 }
 
 export default function tabTrap(els) {
+    let selectors = '';
+    els.forEach((el, key, array) => {
+        selectors += el;
+
+        if(key !== array.length-1) {
+            selectors += ', ';
+        }
+    })
+
     let items = document.querySelectorAll('[tab-trap]');
 
     if(items) {
         items.forEach(item => {
-            let selectors;
-
-            els.forEach(el => {
-                selectors += el + ', ';
-            })
-
-            let classWatcher = new ClassWatcher(item, 'active', addTabTrap())
+            let classWatcher = new ClassWatcher(item, 'active', addTabTrap)
         })
     }
 
-    function addTabTrap(selectors, item) {
+    function addTabTrap(item) {
+        console.log(selectors);
         let focusableEls = item.querySelectorAll(selectors);
         let firstFocusableEl = focusableEls[0];
         var lastFocusableEl = focusableEls[focusableEls.length - 1];
