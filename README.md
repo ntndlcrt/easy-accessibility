@@ -19,9 +19,9 @@ Ou npm, si vous préférez :
 npm install easy-accessibility
 ```
 
-## Utiliser
+## Setup
 
-### Serving the app
+Dans votre code JS, copiez-collez les lignes suivantes :
 
 ```js
 import accessibility from 'easy-accessibility'
@@ -34,8 +34,4 @@ Et voilà, le tour est joué !
 
 * **Antoine Delcourte** - *Création / développement* - [Page github](https://github.com/ntndlcrt)
 
-Consultez également la [documentation](https://github.com/your/project/contributors) who participated in this project.
-
-## License
-
-[MIT License](https://andreasonny.mit-license.org/2019) © Andrea SonnY
+Consultez également la [documentation](https://easy-accessibility-ou635rnps-ntndlcrt.vercel.app/) pour en apprendre davantage.
