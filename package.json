@@ -9,7 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "easy-accessibility": "^1.0.4",
+    "easy-accessibility": "^1.0.5",
     "html-react-parser": "^1.4.9",
     "next": "12.1.0",
     "postcss-import": "^14.0.2",
