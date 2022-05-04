@@ -32,7 +32,7 @@ Et voilà, le tour est joué !
 
 ## Auteur
 
-* **Antoine Delcourte** - *Initial work* - [Antoine Delcourte](https://github.com/ntndlcrt)
+* **Antoine Delcourte** - *Création / développement* - [Page github](https://github.com/ntndlcrt)
 
 Consultez également la [documentation](https://github.com/your/project/contributors) who participated in this project.
 
