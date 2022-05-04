@@ -1,6 +1,6 @@
 {
   "name": "easy-accessibility",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "NPM package to make accessibility accesible for developers",
   "main": "src/index.js",
   "scripts": {
