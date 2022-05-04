@@ -3,17 +3,19 @@ export default function clickStatus() {
 
     if (items) {
         items.forEach(item => {
-            if(item.ariaPressed === "true") {
-                item.setAttribute('aria-pressed', false);
-            } else if(item.ariaPressed === "false") {
-                item.setAttribute('aria-pressed', true);
-            }
-
-            if(item.ariaExpanded === "true") {
-                item.setAttribute('aria-expanded', false);
-            } else if(item.ariaExpanded === "false") {
-                item.setAttribute('aria-expanded', true);
-            }
+            item.addEventListener('click', () => {
+                if(item.ariaPressed === "true") {
+                    item.setAttribute('aria-pressed', false);
+                } else if(item.ariaPressed === "false") {
+                    item.setAttribute('aria-pressed', true);
+                }
+    
+                if(item.ariaExpanded === "true") {
+                    item.setAttribute('aria-expanded', false);
+                } else if(item.ariaExpanded === "false") {
+                    item.setAttribute('aria-expanded', true);
+                }
+            })
         })
     }
 }
