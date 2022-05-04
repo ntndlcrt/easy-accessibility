@@ -1,0 +1,12 @@
+.popup {
+    @apply absolute absolute-classic flex flex-col items-center px-6 py-8 rounded-1 bg-white z-50;
+
+    &-container {
+        @apply fixed w-screen h-screen z-50 opacity-0 invisible top-0 left-0;
+        background: rgba(0, 0, 0, 0.5);
+
+        &.active {
+            @apply visible opacity-100;
+        }
+    }
+}

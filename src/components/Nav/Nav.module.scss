@@ -1,0 +1,30 @@
+.nav {
+    background: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(6rem);
+    border-bottom: 0.1rem solid theme('colors.gray_light');
+
+    @apply py-1_5 w-full top-0 left-0 fixed z-20;
+
+    & > * {
+        @apply items-center;
+    }
+
+    &Logo {
+        @apply text-32;
+    }
+
+    &Links {
+        @apply flex justify-center col-span-4;
+
+        &Item {
+            @apply mr-6 text-14 last:mr-0 text-gray font-400 hover:text-black;
+        }
+    }
+
+    &Git {
+        width: 6rem;
+        height: 6rem;
+
+        @apply flex items-center justify-center text-center text-white rounded-round bg-blue leading-1 cursor-pointer hover:text-gray_lighter;
+    }
+}

@@ -1,0 +1,34 @@
+// Define section properties
+@layer base {
+    section {
+        @apply mx-auto mb-12 relative;
+    
+        @screen md {
+            @apply mb-14;
+            max-width: 192rem;
+        }
+    }
+
+    #root {
+        @apply relative mx-auto;
+    }
+}
+
+// Define common grid size
+@layer components {
+    .row {
+        display: grid;
+        width: 100%;
+        max-width: $grid-max-width;
+        grid-gap: $grid-default-gap;
+        margin: auto;
+
+        & > * {
+            width: 100%;
+        }
+
+        @screen md {
+            padding: 0 $grid-default-gap;
+        }
+    }
+}

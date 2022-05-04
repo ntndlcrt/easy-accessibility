@@ -1,0 +1,7 @@
+form {
+    label {
+        input {
+            @apply rounded-1 border-1 border-gray w-content px-2 py-1;
+        }
+    }
+}
